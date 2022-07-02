@@ -7,59 +7,59 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/et_Name"
+        android:id="@+id/et_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Имя"
+        android:hint="@string/name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/et_Height"
+        app:layout_constraintBottom_toTopOf="@+id/et_height"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_Weight"
+        android:id="@+id/et_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Вес"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/et_Age"
+        android:hint="@string/weight"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/et_age"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_Height" />
+        app:layout_constraintTop_toBottomOf="@+id/et_height" />
 
     <EditText
-        android:id="@+id/et_Age"
+        android:id="@+id/et_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Возраст"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:hint="@string/age"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_Weight" />
+        app:layout_constraintTop_toBottomOf="@+id/et_weight" />
 
     <EditText
-        android:id="@+id/et_Height"
+        android:id="@+id/et_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Рост"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/et_Weight"
+        android:hint="@string/height"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/et_weight"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_Name" />
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_result"
         android:layout_width="266dp"
         android:layout_height="94dp"
         android:layout_marginTop="36dp"
@@ -67,10 +67,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_name" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Считать!"
