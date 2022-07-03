@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HW1</string>
+    <string name="main_fragment">Main Fragment</string>
+    <string name="avito">Avito</string>
+    <string name="creator">Creator</string>
+    <string name="name">Name</string>
+    <string name="id">Id</string>
+    <string name="avito_ru">Avito.ru</string>
 </resources>
