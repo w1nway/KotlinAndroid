@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Домашяя работа 2</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="menu_music">Музыка</string>
+    <string name="menu_main">Главная</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_store">Магазин</string>
+</resources>

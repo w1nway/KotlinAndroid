@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.example.hw1.MusicFragment"
+        android:label="MusicFragment"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_musicFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/musicFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.hw1.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.hw1.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/settingsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/storeFragment"
+        tools:layout="@layout/fragment_store"
+        android:name="com.example.hw1.StoreFragment"
+        android:label="fragment_store">
+        <action
+            android:id="@+id/action_storeFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/storeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/unactiveFragment"
+        android:name="com.example.hw1.UnactiveFragment"
+        tools:layout="@layout/fragment_unactive"
+        android:label="fragment_unactive" />
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.example.hw1.ProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        android:label="fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_unactiveFragment"
+            app:destination="@id/unactiveFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/profile_fragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>
