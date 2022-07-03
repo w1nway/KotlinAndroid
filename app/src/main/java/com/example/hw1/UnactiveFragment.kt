@@ -21,7 +21,6 @@ class UnactiveFragment : Fragment(R.layout.fragment_unactive) {
     companion object {
 
         private const val ARG_TEXT = "amazing"
-
         fun createBundle(text: String): Bundle {
             val bundle = Bundle()
             bundle.putString(

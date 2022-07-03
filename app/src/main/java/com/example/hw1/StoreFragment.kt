@@ -11,11 +11,9 @@ class StoreFragment : Fragment(R.layout.fragment_store) {
     private var _binding: FragmentStoreBinding? = null
     private val binding get() = _binding!!
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentStoreBinding.bind(view)
-
 
         with(binding) {
             btnUnactive.setOnClickListener {
